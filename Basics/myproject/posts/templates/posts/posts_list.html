@@ -7,7 +7,7 @@ Post {% endblock %} {% block content %}
   {% for post in posts %}
   <article class="post">
     <h2>
-      <a href="{% url 'post:page' slug=post.slug %}">{{ post.title }}</a>
+      <a href="{% url 'posts:page' slug=post.slug %}">{{ post.title }}</a>
       {{ post.title }}
     </h2>
     <p>{{ post.date }}</p>
